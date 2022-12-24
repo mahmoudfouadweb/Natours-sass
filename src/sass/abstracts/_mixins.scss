@@ -19,7 +19,7 @@
             @content
         }
     }
-    @if $breakpoint == tab-land {
+    @if $breakpoint == tab-port {
         @media (max-width : 56.25em) {
             @content
         }

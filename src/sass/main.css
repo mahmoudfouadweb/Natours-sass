@@ -81,29 +81,20 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 37.5em) {
-  html {
-    font-size: 50%;
-  }
-}
 @media (max-width: 56.25em) {
   html {
-    font-size: 70%;
+    font-size: 56.25%;
   }
 }
 @media (max-width: 75em) {
   html {
-    font-size: 70%;
+    font-size: 56.25%;
   }
 }
 @media (min-width: 112.5em) {
   html {
-    font-size: 80%;
+    font-size: 75%;
   }
-}
-
-body {
-  box-sizing: border-box;
 }
 
 body {
@@ -113,6 +104,16 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
+}
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+@media (max-width: 75em) {
+  body {
+    padding: 0;
+  }
 }
 
 .heading-primary {
@@ -127,6 +128,7 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+  color: blue;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 1s;
@@ -137,6 +139,12 @@ body {
   animation-delay: 3s;
   animation-iteration-count: 3;
   */
+}
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    font-family: 5rem;
+    letter-spacing: 1rem;
+  }
 }
 .heading-primary--sub {
   display: block;
@@ -157,6 +165,11 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
+}
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
 }
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
