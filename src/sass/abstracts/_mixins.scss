@@ -12,3 +12,28 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width : phone) {
+            @content
+        }
+    }
+    @if $breakpoint == phone {
+        @media (max-width : phone) {
+            @content
+        }
+    }
+    
+    @if $breakpoint == phone {
+        @media (max-width : phone) {
+            @content
+        }
+    }
+    
+    @if $breakpoint == phone {
+        @media (max-width : phone) {
+            @content
+        }
+    }
+}

@@ -15,7 +15,8 @@
     "start": "npm-run-all copy --parallel watch serve",
     "build": "npm-run-all copy:html build:*",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
-    "dev":"parcel src/index.html"
+    "dev":"parcel src/index.html",
+    "compile:sass" : "sass src/sass/main.scss src/css/style.css -w"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
